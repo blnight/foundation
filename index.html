@@ -7,15 +7,15 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-
+	
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
-
-	<title>Welcome to Foundation</title>
-
+	
+	<title>Foundation Navigation Bar & Dropdown</title>
+  
 	<!-- Included CSS Files -->
 	<!-- Combine and Compress These CSS Files -->
-	<link rel="stylesheet" href="stylesheets/globals.css">
+	<link rel="stylesheet" href="stylesheets/globals.css">			
 	<link rel="stylesheet" href="stylesheets/grid.css">
 	<link rel="stylesheet" href="stylesheets/ui.css">
 	<link rel="stylesheet" href="stylesheets/forms.css">
@@ -29,7 +29,7 @@
 		<link rel="stylesheet" href="stylesheets/ie.css">
 	<![endif]-->
 
-
+	
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,83 +39,69 @@
 <body>
 
 	<!-- container -->
-	<div class="container">
-
 		<div class="row">
 			<div class="twelve columns">
-				<h2>Welcome to Foundation</h2>
-				<p>This is version 2.0.3 released on October 31, 2011</p>
-
-				<hr />
-			</div>
-		</div>
-		<div class="row">
-			<div class="twelve columns" id="nav-bar">
-    			<ul>
-        			<li><a href="#" class="drop">Nav Item 1</a>
-        				<ul>
-        					<div id="dropdown-1" class="flyout">
-        						<div class="row">
-        							<div class="twelve columns">
-        								<h1>One Column Example (200px)</h1>
-        								<br>
-        									<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
-        							</div>
-        						</div>
-        					</div>
-        				</ul>
-        			</li>
-        			<li><a href="#" class="drop">Nav Item 2</a>
-        				<ul>
-            				<div id="dropdown-2" class="flyout">
-                                <div class="row">
-                                 	<div class="twelve columns">
-                                 		<h1>Two Column Example (400px)</h1>
-                                 		<br>
-                                 			<div class="row">
-                               				  	<div class="six columns">
-                               				  		<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                                 				</div>
-                                 				<div class="six columns">
-                                 					<p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.</p>
-                                 				</div>
-                                 			</div>
-                          			</div>
-                          		</div>
-                          	</div>
-        				</ul>
-        			</li>
-        			<li><a href="#" class="drop">Nav Item 3</a>
-        				<ul>
-            				<div id="dropdown-3" class="flyout">
-                                <div class="row">
-                                	<div class="twelve columns">
-                                		<h1>Three Column Example (600px)</h1>
-                                		<br>
-                                			<div class="row">
-                                       			<div class="four columns">
-                                        			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
-                                        		</div>
-                                        		<div class="four columns">
-													<p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum.</p>
-												</div>
-												<div class="four columns">
-													<img src="http://placekitten.com/200/300"</div>
-                          		</div>
-                          	</div>
-        				</ul>
-        			</li>
-        				<li><a href="#">Nav Item 4</a>
+				<div class="nav-bar">
+    				<ul>
+        				<li><a href="#">Nav Item 1</a>
         					<ul>
-        						<div class="dropdown-3 align-right">
-        							<div class="row">
+        						<div class="flyout one">
+        							<div class="row"> 
         								<div class="twelve columns">
-        									<p>test</p>
+        									<h5>One Column Example (200px)</h5>
+        									<br>
+        										<p>Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
         								</div>
         							</div>
         						</div>
-    				</ul>
-    				</li>
+        					</ul>
+        				</li>
+        				<li><a href="#">Nav Item 2</a>
+        					<ul>
+            					<div class="flyout two">
+                                	<div class="row">
+                                 		<div class="twelve columns">
+                                 			<h5>Two Column Example (400px)</h5>
+                                 			<br>
+                                 				<div class="row">
+                               				  		<div class="six columns">
+                               				  			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                                 					</div>
+                                 					<div class="six columns">
+                                 						<p>Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum.</p>
+                                 					</div>
+                                 				</div>
+                          				</div>
+                          			</div>
+                          		</div>                        	
+        					</ul>
+        				</li>
+        				<li><a href="#">Nav Item 3	</a>
+        					<ul>
+            					<div class="flyout three">
+                                	<div class="row">
+                                		<div class="twelve columns">
+                                			<h5>Three Column Example (600px)</h5>
+                                			<br>
+                                				<div class="row">
+                                       				<div class="four columns">
+                                        				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+                                        			</div>
+                                        			<div class="four columns">
+														<p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum.</p>
+													</div>
+														<div class="four columns">
+															<img src="http://placekitten.com/200/300"
+                          								</div>
+                          							</di>
+                          						</div>
+                          				</div>
+                          			</div>
+                          		</div>
+        					</ul>
+        				</li>
+          			</ul>
+    			</li>				
 			</div>
 		</div>
 	</div>
@@ -130,6 +116,6 @@
 	<script src="javascripts/jquery.placeholder.min.js"></script>
 	<!-- End Combine and Compress These JS Files -->
 	<script src="javascripts/app.js"></script>
-
+	
 </body>
 </html>
