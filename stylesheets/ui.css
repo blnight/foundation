@@ -13,6 +13,7 @@
 :: Lists
 :: Panels
 :: Navigation Bar Drop Down
+:: Microformats
 */
 
 
@@ -209,8 +210,23 @@
 	.nav-bar ul li:hover a { color: grey; background: #EEE; -moz-border-radius: 0px 0px 0px 0px; -webkit-border-radius: 0px 0px 0px 0px; border-radius: 0px 0px 0px }
 	.nav-bar ul li a { width: 100px; position: relative; font-size: 14px; padding: 10px 20px 10px 10px; display: block; text-decoration: none; color: white; margin-left: 20px; font-weight: bold; } 
 	.nav-bar ul li:hover ul { position: relative; }
-	
+}
 
+
+
+/*	--------------------------------------------------
+   	Microformats
+	-------------------------------------------------- */
+	
+	/* hCard */
+	ul.vcard { display: inline-block; margin: 0 0 12px 0; border: 1px solid #ddd; padding: 10px; }
+	ul.vcard li { margin: 0; display: block; }
+	ul.vcard li.fn { font-weight: bold; font-size: 15px; font-size: 1.5rem; }
+	
+	p.vevent span.summary { font-weight: bold; }
+	p.vevent abbr { cursor: default; text-decoration: none; font-weight: bold; border: none; padding: 0 1px; }
 	
 	
-	}
+	
+	
+	
